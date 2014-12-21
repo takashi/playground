@@ -1,0 +1,18 @@
+{
+  "name": "csp-playground",
+  "version": "0.0.0",
+  "description": "browse",
+  "main": "index.html",
+  "scripts": {
+    "build": "browserify ./src/index.js -o dist/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "js-csp": "^0.3.2"
+  },
+  "devDependencies": {
+    "browserify": "^7.0.2"
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "name": "tryout-reactjs",
+  "version": "0.0.0",
+  "description": "my tryout for reactjs",
+  "repository": "takashi/tryout-reactjs",
+  "main": "index.html",
+  "scripts": {
+    "build": "browserify ./src/index.jsx > ./build/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Takashi Nakagawa",
+  "license": "Apache 2",
+  "dependencies": {
+    "react": "^0.10.0"
+  },
+  "devDependencies": {
+    "browserify": "^3.38.0",
+    "reactify": "^0.10.0"
+  },
+  "browserify": {
+    "transform": [
+      [ "reactify"]
+    ]
+  }
+}

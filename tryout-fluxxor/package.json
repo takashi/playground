@@ -1,0 +1,28 @@
+{
+  "name": "tryout-fluxxor",
+  "version": "0.0.0",
+  "description": "",
+  "main": "public/index.html",
+  "scripts": {
+    "build": "browserify ./app/app.jsx -o ./dist/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "fluxxor": "^1.5.1",
+    "react": "^0.12.1"
+  },
+  "devDependencies": {
+    "browserify": "^7.0.2",
+    "debowerify": "^1.2.0",
+    "reactify": "^0.17.1"
+  },
+  "browserify": {
+    "transform": [
+      [
+        "reactify"
+      ]
+    ]
+  }
+}
