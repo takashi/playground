@@ -6,9 +6,8 @@ class ApplicationController < ActionController::Base
 
   private
   def validate_token
-    authorization = request.headers['Authorization']
-    raise JWT::InvalidTokenError if authorization.nil?
     token = request.headers['Authorization'].split(' ').last
+    raise JWT::InvalidTokenError if token.nil?
     AuthToken.decode!(token)
 
     # [TODO] user verification
