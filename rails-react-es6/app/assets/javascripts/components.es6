@@ -1,5 +1,11 @@
 //= require_tree ./components
 
+class Hello extends React.Component {
+  render() {
+    return <div>{ this.props.name }</div>
+  }
+}
+
 class Article extends React.Component {
   // getInitialState doesnt work with react-rails :(
   getInitialState() {
