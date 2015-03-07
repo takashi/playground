@@ -14,7 +14,8 @@ gem 'coffee-rails', '~> 4.1.0'
 # See https://github.com/sstephenson/execjs#readme for more supported runtimes
 # gem 'therubyracer', platforms: :ruby
 
-gem 'sprockets', github: 'sstephenson/sprockets', branch: '4.x'
+gem 'sprockets', '~> 3.0.0.beta.8'
+gem 'sprockets-es6', require: 'sprockets/es6'
 
 gem 'react-rails', '~> 1.0.0.pre', github: 'reactjs/react-rails'
 
