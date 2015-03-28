@@ -1,0 +1,12 @@
+{
+  "name": "Hello",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "start": "react-native start"
+  },
+  "dependencies": {
+    "alt": "^0.14.5",
+    "react-native": "^0.1.0"
+  }
+}
