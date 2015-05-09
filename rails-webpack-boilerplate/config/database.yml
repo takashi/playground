@@ -9,13 +9,21 @@
 # And be sure to use new-style password hashing:
 #   http://dev.mysql.com/doc/refman/5.0/en/old-client.html
 #
+<%
+  socket = [
+    ENV["BOXEN_MYSQL_SOCKET"],
+    "/var/run/mysql5/mysqld.sock",
+    "/tmp/mysql.sock"
+  ].detect { |f| f && File.exist?(f) }
+%>
+
 default: &default
   adapter: mysql2
   encoding: utf8
   pool: 5
   username: root
   password:
-  host: localhost
+  socket: <%= socket %>
 
 development:
   <<: *default

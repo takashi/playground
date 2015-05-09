@@ -1,0 +1,16 @@
+{
+  "name": "rails-webpack-boilerplate",
+  "version": "0.0.0",
+  "homepage": "https://github.com/takashi/playground",
+  "authors": [
+    "Takashi Nakagawa <tak1240@gmail.com>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

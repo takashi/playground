@@ -1,0 +1,18 @@
+{
+  "name": "rails-webpack-boilerplate",
+  "version": "1.0.0",
+  "description": "rails webpack boilerplate",
+  "main": "app/assets/javascripts/dist/bundle.index.js",
+  "scripts": {
+    "watch": "$(npm bin)/webpack --watch",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "devDependencies": {
+    "bower": "^1.4.1",
+    "webpack": "^1.8.9",
+    "html-loader": "^0.2.3"
+  },
+  "author": "Takashi Nakagawa",
+  "license": "MIT",
+  "private": true
+}
