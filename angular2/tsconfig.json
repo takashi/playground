@@ -1,15 +1,22 @@
 {
   "compilerOptions": {
     "target": "ES5",
-    "module": "system",
-    "moduleResolution": "node",
+    "module": "commonjs",
     "sourceMap": true,
     "emitDecoratorMetadata": true,
     "experimentalDecorators": true,
+    "noEmitHelpers": false,
     "removeComments": false,
     "noImplicitAny": false
   },
   "exclude": [
     "node_modules"
-  ]
+  ],
+  "filesGlob": [
+    "./app/**/*.ts",
+    "./test/**/*.ts",
+    "!./node_modules/**/*.ts"
+  ],
+  "compileOnSave": false,
+  "buildOnSave": false
 }
