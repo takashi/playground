@@ -1,6 +1,5 @@
 var path = require('path');
 var webpack = require('webpack');
-var CommonsChunkPlugin = require('webpack/lib/optimize/CommonsChunkPlugin');
 
 var configurations = {
   entry: {
