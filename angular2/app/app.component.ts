@@ -3,8 +3,6 @@ import {Hero} from './hero'
 import {HeroDetailComponent} from './hero-detail.component'
 import {HeroService} from './hero.service'
 
-var css = require("raw!./app.component.css");
-
 @Component({
   selector: 'my-app',
   template:`
@@ -19,7 +17,7 @@ var css = require("raw!./app.component.css");
     </ul>
     <my-hero-detail [hero]="selectedHero"></my-hero-detail>
   `,
-  styles:[css],
+  styleUrls:['./app/app.component.css'],
   directives: [HeroDetailComponent],
   providers: [HeroService]
 })
