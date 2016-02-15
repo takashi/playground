@@ -1,0 +1,3 @@
+[submodule "browser-editor/jsrepl"]
+	path = browser-editor/jsrepl
+	url = git@github.com:replit/jsrepl.git
