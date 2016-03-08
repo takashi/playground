@@ -3,7 +3,9 @@ import Peer from 'peerjs';
 // Compatibility shim
 navigator.getUserMedia = navigator.getUserMedia || navigator.webkitGetUserMedia || navigator.mozGetUserMedia;
 // PeerJS object
-var peer = new Peer({key: 'peerjs', port: 443, debug: 3, host: 'div-rtc-sample.herokuapp.com', secure: true});
+// var peer = new Peer({key: 'peerjs', port: 443, debug: 3, host: 'div-rtc-sample.herokuapp.com', secure: true});
+var peer = new Peer({host: 'localhost', port: 9000, path: '/peer', debug: 3,});
+
 peer.on('open', function(){
   $('#my-id').text(peer.id);
 });
